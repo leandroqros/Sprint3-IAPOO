@@ -20,14 +20,14 @@ namespace PCBRecuperacio
         private void btnHola1_Click(object sender, System.EventArgs e)
         {
             MensajeHeredado saludosHeredado = new MensajeHeredado();
-            string mensaje = saludosHeredado.salutacio(txtNom.Text);
+            string mensaje = saludosHeredado.salutacioAmbNom(txtNom.Text);
             MessageBox.Show(mensaje);
         }
 
         private void btnHola2_Click(object sender, System.EventArgs e)
         {
             MensajeHeredado saludosHeredado = new MensajeHeredado();
-            string mensaje = saludosHeredado.salutacio(txtNom.Text + " del grupo de los " + cmbBandol.Text);
+            string mensaje = saludosHeredado.salutacioAmbNomiBandol(txtNom.Text, cmbBandol.Text);
             MessageBox.Show(mensaje);
         }
 
@@ -42,15 +42,15 @@ namespace PCBRecuperacio
 
         private void btnAdeuOriginal_Click(object sender, System.EventArgs e)
         {
-            MissatgeSimple despedida = new MissatgeSimple();
-            string texto = despedida.comiat();
+            MensajeHeredado despedida = new MensajeHeredado();
+            string texto = despedida.comiatCatala();
             MessageBox.Show(texto);
         }
 
         private void btnAdeu1_Click(object sender, System.EventArgs e)
         {
             MensajeHeredado bye = new MensajeHeredado();
-            string text = bye.comiatCatala();
+            string text = bye.comiat();
             MessageBox.Show(text);
         }
     }
