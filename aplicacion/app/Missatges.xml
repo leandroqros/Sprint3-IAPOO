@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Missatges</name>
+    </assembly>
+    <members>
+        <member name="M:Missatges.MensajeHeredado.salutacioAmbNom(System.String)">
+            <summary>
+            Lo mismo que hace la funcion salutacion pero esta incluye una personalizacion puesta por el usuario.
+            </summary>
+            <param name="nombre">Este parametro es customizable por el usuario, cuando el mismo escribe en la caja vacia de propiedad NOMBRE.</param>
+            <returns>Benvingut NOMBREFULANO.</returns>
+            <example>
+            <code>
+            string mis = "Benvingut " + Leandro + ".";
+            return mis;
+            </code>
+            </example>
+            <returns>Benvigunt Leandro.</returns>
+        </member>
+        <member name="M:Missatges.MensajeHeredado.salutacioAmbNomiBandol(System.String,System.String)">
+            <summary>
+            Este boton te saluda personalmente con el bando que perteneses
+            </summary>
+            <param name="nombre">Tu nombre</param>
+            <param name="bandol">A elegir</param>
+            <returns>Leandro, benvingut a la First Order</returns>
+        </member>
+        <member name="M:Missatges.MissatgeSimple.salutacio">
+            <summary>
+            Funcion saudacion. Esta funcion te dá las bienvenidas al programa.
+            </summary>
+            <returns>String que continene "Benvingut"</returns>
+        </member>
+        <member name="M:Missatges.MissatgeSimple.comiat">
+            <summary>
+            Funcion de Adios. Esta funcion se despide de ti cuando le presionas el boton.
+            </summary>
+            <returns>String que contiene "Adeu, fins aviat"</returns>
+            <remarks>Añadida una variable STRING con nombre mis, le damos un valor entre "".</remarks>
+        </member>
+    </members>
+</doc>

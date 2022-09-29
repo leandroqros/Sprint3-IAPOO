@@ -9,7 +9,6 @@ namespace PCBRecuperacio
         {
             InitializeComponent();
         }
-
         private void btnHolaOriginal_Click(object sender, System.EventArgs e)
         {
             MensajeHeredado saludosHeredado = new MensajeHeredado();
